@@ -6,7 +6,7 @@ function calculateMBI() {
     const height = parseFloat(heightInput.value);
     const weight = parseFloat(weightInput.value);
 
-    if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+    if (!height || !weight || height <= 0 || weight <= 0) {
         resultDiv.textContent = 'Please enter valid height and weight values.';
         resultDiv.style.color = 'red';
         return;
@@ -26,6 +26,6 @@ function calculateMBI() {
         category = 'Obese';
     }
 
-    resultDiv.textContent = `Your MBI is ${mbi} (${category}).`;
+    resultDiv.textContent = `Your BMI is ${mbi} (${category}).`;
     resultDiv.style.color = 'black';
 }

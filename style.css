@@ -24,6 +24,9 @@ body {
 .calculator label {
     display: block;
     margin: 10px 0 5px;
+    font-size: 17px;
+    font-weight: 600;
+    text-align: start;
 }
 .calculator input {
     width: 100%;
